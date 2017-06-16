@@ -310,8 +310,8 @@ echo $txt;
         {
             // If font used is a Unicode Truetype font then
             // use Unicode PDF generator
-            $pdf_path = find_best_location_in_include_path( "tcpdf" );
-            require_once($pdf_path."/tcpdf.php");
+
+            require_once("./vendor/autoload.php");
             //require_once($pdf_path."/tcpdf.php");
             $this->document = new TCPDF($this->orientations[$this->orientation],'pt',$this->page_type, true, 'UTF-8', false);
             $this->document->setPrintHeader(false);
