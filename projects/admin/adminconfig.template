@@ -74,7 +74,7 @@ define('SW_DEFAULT_pdfFont', "Helvetica");
 define('SW_DEFAULT_pdfFontSize', "10");
 
 // FPDF parameters
-define('FPDF_FONTPATH', './fpdf/font/');
+define('FPDF_FONTPATH', './vendor/tecnickom/tcpdf/fonts');
 
 // Graph Defaults
 define('SW_DEFAULT_GraphWidth', 800);
